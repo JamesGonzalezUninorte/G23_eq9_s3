@@ -1,18 +1,20 @@
-# Proyecto_UNINORTE Grupo No.23 Equipo No. 8
+# Proyecto_UNINORTE Grupo No.23 Equipo No. 9
+## Plataforma de Gestión de Empleados
 
 - Descripcion del proyecto :
 
-Universidad Pontificia Bolivariana requiere un sistema para la gestión de las notas de los estudiantes matriculados en cada una de las asignaturas ofrecidas. Se espera que dicho sistema se desarrolle para gestionar un único semestre.
+Bachoco requiere un sistema para la gestión de sus empleados en el cual se pueda visualizar los datos de los mismos.
 
-Los tipos de usuarios que debe manejar el sistema son superadministrador, docente, y estudiante.
+Los datos que se tienen de los empleados además de sus datos personales son, fecha de ingreso, tipo de contrato, fecha de término de contrato, cargo, dependencia en la que labora y salario devengado.
 
-El estudiante debe estar en la capacidad poder visualizar su información personal, las materias que tiene matriculadas, la nota obtenida en cada una de ellas, y el detalle de las actividades presentadas.
+Los tipos de usuarios que debe manejar el sistema son superadministrador, administrador, y usuario final.
 
-El docente de la plataforma debe estar en la capacidad de poder registrar actividades en cada una de las materias que tiene asignadas (entre 4 y 8 actividades por asignatura), calificar dichas actividades, y ofrecer una retroalimentación sobre el trabajo desarrollado.
+El usuario final debe estar en la capacidad poder visualizar su información y una retroalimentación realizada mensualmente por la compañía acerca de su desempeño junto con un puntaje asignado.
 
-La nota final de una asignatura corresponde al promedio de las actividades desarrolladas.
+El administrador de la plataforma debe estar en la capacidad de poder agregar usuarios al sistema y gestionar los datos de los mismos.
 
-Un superadministrador ejerce el control total de la plataforma (docentes, estudiantes y asignaturas).
+Un superadministrador ejerce el control total de la plataforma (usuarios y administradores).
+
 
 ##### Los datos suministrados por los usuarios deben cumplir la política de privacidad de datos vigente.
 
