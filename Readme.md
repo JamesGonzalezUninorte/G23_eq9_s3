@@ -1,4 +1,6 @@
-# Proyecto_UNINORTE Grupo No.23 Equipo No. 9
+# MisionTic2020 UNINORTE
+# Ciclo 3 Grupo No.23 Equipo No. 9
+## Sprint 3
 ## Plataforma de Gestión de Empleados
 
 - Descripcion del proyecto :
