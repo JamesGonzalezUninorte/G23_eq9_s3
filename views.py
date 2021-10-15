@@ -1,9 +1,44 @@
-'''Sprint 3
-   Grupo 23 
-   Equipo9
-'''
+from flask import Flask, render_template, blueprints, request, redirect, url_for
 
-from flask import Flask, render_template, blueprints, request, redirect, url_for, jsonify
+main = blueprints.Blueprint('main', __name__)
+@main.route('/')
+def index():
+    """Función que maneja la raiz del sitio web.
+
+        Parameters:
+        Ninguno
+
+        Returns:
+        Plantilla index.html
+    """
+    
+    return render_template('pg01.html')
+
+# nota nota xx
+
+# nota 02
+@main.route('/login/', methods=('GET', 'POST'))
+
+# nota 03
+@main.route('/empleado', methods=('GET', 'POST'))
+
+# nota 04
+@main.route('/retroalimentacion', methods=('GET', 'POST'))
+
+# nota 05
+@main.route('/dashboard_adm', methods=('GET', 'POST'))
+
+# nota 06
+@main.route('/eliminar', methods=('GET', 'POST'))
+
+# nota 07
+@main.route('/crear', methods=('GET', 'POST'))
+
+# nota 08
+@main.route('/editar', methods=('GET', 'POST'))
+def editar():
+    return render_template("pg08.html")
+
 
 
 lst_Empleados=[
@@ -13,37 +48,6 @@ lst_Empleados=[
     {'nombre':'Empleado Cuatro', 'id':'12348', 'cantidad_1':'45', 'cantidad_2':'789'},
     ]
 
-# nota 01
-@main.route('/', methods=('GET', 'POST')
-def ():
-    '''
-    '''
-    return render_templete('')
-
-# nota nota xx
-
-# nota 02
-@app.route('/login/', methods=('GET', 'POST'))
-
-# nota 03
-@app.route('/empleado', methods=('GET', 'POST'))
-
-# nota 04
-@app.route('/retroalimentacion', methods=('GET', 'POST'))
-
-# nota 05
-@app.route('/dashboard_adm', methods=('GET', 'POST'))
-
-# nota 06
-@app.route('/eliminar', methods=('GET', 'POST'))
-
-# nota 07
-@app.route('/crear', methods=('GET', 'POST'))
-
-# nota 08
-@app.route('/editar', methods=('GET', 'POST'))
-def editar():
-    return render_template("pg08.html")
 
 # fin.
 

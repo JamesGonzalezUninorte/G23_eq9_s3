@@ -1,8 +1,8 @@
-'''Sprint 3
+"""Sprint 3
    Grupo 23 
    Equipo9
-'''
-
+"""
+import os
 from flask import Flask
 
 def create_app():
@@ -12,9 +12,10 @@ def create_app():
         Parametros: Ninguno
 
         Returns:    app de Flask
-
     """
+
     app=Flask(__name__)
+    app.secret_key = os.urandom(19)
     from views import main
     app.register_blueprint(main, url_prefix='/')
     return app
