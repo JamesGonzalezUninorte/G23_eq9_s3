@@ -10,7 +10,7 @@ h2{
     color: #377ba8;
     background-color: lightgray;
     text-align: left;
-    font-family: serif;
+    font-family: Arial;
 }
 
 form{
@@ -31,10 +31,7 @@ form input{
     direction: ltr;
 }
 
-button{
-    text-align: center;
-    font-weight: bold;
-}
+
 
 #div123{
     background-color: blue;
@@ -78,16 +75,23 @@ button{
 }
 
 /*  */
+.boton{
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+}
+
 .foto, .video {
     background-color: rgb(48, 138, 13);
     width: 100%;
-    padding: 20px;
+    padding: 1px;
 }
 
 .publicacion {
     background-color:#081191;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 5px;
+    margin-top: 50px;
 }
 
 /* Fin de Estilos    */

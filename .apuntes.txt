@@ -1,0 +1,31 @@
+crear el ambiente virtual 
+adicionar dos lineas al bin/activate
+
+virtualenv nn_env
+
+/* si ya esta creada la carpeta, entonces es::
+virtualenv .
+
+/*  windows */;
+set "FLASK_APP=xxx.py"
+set "FLASK_ENV=development"
+
+/*  linux */
+$ export FLASK_APP=xxx.py
+$ export FLASK_ENV=development
+
+
+activar el ambiente virtual, 
+source bin/activate
+
+install_args
+pip install flask flask-wtf
+
+
+
+Ejecutar para activar servidor
+flask run
+
+
+para desactivar el nn_env 
+deactivate
