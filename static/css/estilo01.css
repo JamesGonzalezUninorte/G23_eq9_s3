@@ -1,5 +1,74 @@
 /* Estilos definidos */
+h1{
+    color: #377ba8;
+    background-color: lightgray;
+    text-align: center;
+    font-family: serif;
+}
 
+form{
+    width: 350px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form input{
+    padding: 3px 10px;
+    height:20px;
+    border-radius: 3px;
+    margin:0;
+    display: inline-block;
+    text-align: left;
+    direction: ltr;
+}
+
+button{
+    text-align: center;
+    font-weight: bold;
+}
+
+#div123{
+    background-color: blue;
+    float: left;
+}
+
+#div456{
+    background-color: red;
+    float: left;
+}
+
+#div789{
+    background-color:green;
+}
+
+.userIcon{
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:15px;
+}
+
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.input_container{
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px;
+  
+    direction: rtl;
+    width: 200px;
+}
+
+.mensaje{
+    border-radius: 5px;
+    background-color: #b8a9aa;
+}
 
 
 

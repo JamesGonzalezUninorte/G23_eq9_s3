@@ -6,12 +6,10 @@ import os
 from flask import Flask
 
 def create_app():
-    """
-        fx Crear la aplicación principal
+    """fx Crear la aplicación principal
 
-        Parametros: Ninguno
-
-        Returns:    app de Flask
+       Parametros: Ninguno
+       Returns:    app de Flask
     """
 
     app=Flask(__name__)
