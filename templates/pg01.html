@@ -1,27 +1,23 @@
 <!--Pagina 1: Inicio -->
 
+{%extends 'pg00_base.html'%}
 
-<!DOCTYPE html>
-<html>
-    <head>
-      <script src="{{ url_for('static', filename='js/funciones.js') }}"></script>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo01.css') }}" />
-      <title>Plataforma de gestón de empleados</title>      
-    </head>
-    
-    <body>
-      <h1>Plataforma de gestón de empleados</h1> 
-      <h2>Empleados y administrativos de la empresa Bachoco</h2> 
-         
-    </body>
-</html>
+{%block cabeza%} Bachoco {%endblock%}
 
-<!-- FIN 
-sub titulo 
-Empleados y administrativos de la empresa Bachoco
+{%block cuerpo%}
+    <h1>Plataforma de gestión de empleados</h1>
+    <h2>Empleados y administrativos de la empresa Bachoco</h2> 
 
-Ingrese sus credenciales en el siguiente enlace
+    <div class= publicacion style="float:left">
+        <img class="foto" src="img/img_01.png" / height=200px >
+    </div>
+      
 
-boton de 
-Login
--->
+    <div style="float:center">
+        <p>Ingrese sus credenciales en el siguiente enlace</p>
+    </div>
+      
+
+{%endblock%}
+
+<!-- FIN -->

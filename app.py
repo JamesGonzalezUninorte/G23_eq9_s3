@@ -3,7 +3,7 @@
    Equipo9
 """
 import os
-from flask import Flask
+from flask import Flask, blueprints
 
 def create_app():
     """fx Crear la aplicación principal
@@ -16,6 +16,7 @@ def create_app():
     app.secret_key = os.urandom(19)
     from views import main
     app.register_blueprint(main, url_prefix='/')
+
     return app
     
 # fin.
