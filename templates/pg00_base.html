@@ -2,16 +2,16 @@
 
 <html lang='sp'>
 
-   <head>
-      <meta charset="utf-8"/>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo01.css') }}" />
-      <script src="{{ url_for('static', filename='js/funciones.js') }}"> </script>      
-      <title> {% block cabeza %} {% endblock %} </title>
+<head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo01.css') }}" />
+   <script src="{{ url_for('static', filename='js/funciones.js') }}"> </script>
+   <title> {% block cabeza %} {% endblock %} </title>
 
-   </head>
+</head>
 
-   <body>
-      {% block cuerpo %} {% endblock %}
-   </body>
+<body>
+   {% block cuerpo %} {% endblock %}
+</body>
 
 </html>

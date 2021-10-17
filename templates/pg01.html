@@ -1,25 +1,25 @@
 <!--Pagina 1: Inicio -->
 
-{%extends 'pg00_base.html'%}
+{% extends 'pg00_base.html' %}
 
-{%block cabeza%} Bachoco {%endblock%}
+{% block cabeza %} Bachoco {% endblock %}
 
-{%block cuerpo%}
-    <h1>Plataforma de gestión de empleados</h1>
-    <h2>Empleados y administrativos de la empresa Bachoco</h2> 
+{% block cuerpo %}
+<h1>Plataforma de gestión de empleados</h1>
+<h2>Empleados y administrativos de la empresa Bachoco</h2>
 
-    <div class= publicacion style="float:left">
-        <img class="foto" src="static/img/img_01.png" / heigth=200px >
+<div class="fila">
+    <div class="center-vh">
+        <div class="colIzquierda">
+            <img class="foto" src="static/img/img_01.png" >
+        </div>
+        <div class="colDerecha">
+            <h3>Ingrese sus credenciales en el siguiente enlace</h3>
+            <button class="boton" type="button" value="Entrar" id="botLogin" onclick="location.href='login'">Login</button>
+        </div>
     </div>
-      
+</div>
 
-    <div style="float:center">
-        <h3>Ingrese sus credenciales en el siguiente enlace</h3>
-        <button class="boton">Login</button>
-
-    </div>
-    
-
-{%endblock%}
+{% endblock %}
 
 <!-- FIN -->

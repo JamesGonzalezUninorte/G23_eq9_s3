@@ -1,34 +1,39 @@
 /* Estilos definidos */
-h1{
-    color: #377ba8;
-    background-color: lightgray;
-    text-align: center;
-    font-family: serif;
-}
+h1              { color: #377ba8; background-color: lightgray; text-align: center; font-family: serif; }
 
-h2{
-    color: #377ba8;
-    background-color: lightgray;
-    text-align: left;
-    font-family: Arial;
-}
+h2              { color: #377ba8; background-color: lightgray; text-align: left; font-family: Arial; }
 
-form{
-    width: 350px;
-    padding: 16px;
-    border-radius: 10px;
-    margin: auto;
-    background-color: #ccc;
-}
+h3              { text-align: center; font-family: Arial; }
 
-form input{
-    padding: 3px 10px;
-    height:20px;
-    border-radius: 3px;
-    margin:0;
-    display: inline-block;
-    text-align: left;
-    direction: ltr;
+.boton          { text-align: center; font-weight: bold; margin: 0 auto; display: block; }
+
+/* background-color: #8c8c8c; color: white; padding: 5px; border: 1px solid black; */
+
+.foto, .video   { background-color: rgb(48, 138, 13); width: 100%; padding: 2px; }
+
+.publicacion    { background-color:#56587e; padding: 5px; margin-top: 5px; resize: both;}
+
+.fila:after 	{ content: ""; display: table; clear: both; }
+
+.colIzquierda 	{ float: left; width: 40%; }
+
+.colDerecha 	{ float: right; width: 55%; background-color: #f1f1f1; padding-left: 2px; }
+
+
+.center-vh      { position: relative; left: 50%; top: 40; transform: translate(-50%, -50%); border: 1px solid #dae5e6; padding: 1px; }
+
+.input_container { position:relative; padding:0 0 0 20px; margin:0 20px; direction: rtl; width: 200px; }
+
+.userIcon       { position:absolute; bottom:2px; right:5px; width:24px; height:15px; }
+
+
+/* .publicacion 				{ background-color:#f1f1f1; padding: 20px; margin-top: 20px; }  */
+
+/*  */
+
+form    {    width: 350px;    padding: 16px;    border-radius: 10px;    margin: auto;    background-color: #ccc; }
+
+form input  {     padding: 3px 10px;    height:20px;    border-radius: 3px;     margin:0;    display: inline-block; text-align: left; direction: ltr;
 }
 
 
@@ -47,51 +52,18 @@ form input{
     background-color:green;
 }
 
-.userIcon{
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    width:24px;
-    height:15px;
-}
 
 .error{
     color: #D8000C;
     background-color: #FFBABA;
 }
 
-.input_container{
-    position:relative;
-    padding:0 0 0 20px;
-    margin:0 20px;
-  
-    direction: rtl;
-    width: 200px;
-}
+
+
 
 .mensaje{
     border-radius: 5px;
     background-color: #b8a9aa;
 }
 
-/*  */
-.boton{
-    text-align: center;
-    font-weight: bold;
-    margin: 0 auto;
-    display: block;
-}
-
-.foto, .video {
-    background-color: rgb(48, 138, 13);
-    width: 100%;
-    padding: 1px;
-}
-
-.publicacion {
-    background-color:#081191;
-    padding: 5px;
-    margin-top: 50px;
-}
-
-/* Fin de Estilos    */
+/* Fin de Estilos*/
