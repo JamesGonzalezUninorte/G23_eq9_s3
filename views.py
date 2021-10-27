@@ -21,7 +21,11 @@ def index():
 @main.route('/login', methods=['GET', 'POST'])
 def login():
     """fx 
-    """    
+    """
+    if(request.method == 'POST'):
+        usuario= request.form['username']
+        clave = request.form['userPassword']   
+    
     return render_template('pg02_login.html')
 
 # nota 03

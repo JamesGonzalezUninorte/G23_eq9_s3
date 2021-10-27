@@ -1,0 +1,6 @@
+>> Para activar el ambiente:
+source bin/activate
+
+>> Para activar el servidor local:
+flask run
+

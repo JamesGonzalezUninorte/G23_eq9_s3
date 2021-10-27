@@ -1,6 +1,6 @@
 """Sprint 3
    Grupo 23 
-   Equipo9
+   Equipo 9
 """
 import os
 from flask import Flask, blueprints

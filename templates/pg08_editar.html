@@ -1,0 +1,64 @@
+<!--Pagina 8: Editar -->
+{% extends 'pg00_base' %}
+
+
+{% block cabeza %} Bachoco Plataforma de gestión de empleados {% endblock %}
+
+{% block cuerpo %}
+<h1>Empleados y administrativos de la empresa Bachoco</h1>
+<h2>Edite los campos de información que así lo requiera</h2>
+
+<h1>Resultados de búsqueda</h1>
+      <form name="formularioRegistro" method="POST">
+         <p>Nombre:
+            <div class="input_Container">
+               <input type="text" name="nombre" /> 
+               <img src="{{ url_for('static', filename='img/user.png') }}" class="userIcon"/>
+            </div>
+         </p>
+
+		 <p>Usuario: 
+         <div class="input_Container">
+            <input type="text" name="username" id="username" />
+            <img src="{{ url_for('static', filename='img/user.png') }}" class="userIcon"/>
+         </div>
+         <span class="error" id="errorUsername"></span>
+         </p>
+         
+         <p >Sexo: 
+             <input type="radio" name="sexo" value="h" /> hombre
+             <input type="radio" name="sexo" value="m" /> mujer
+         </p>
+		  
+		 <p>Correo: 
+             <div class="input_Container">
+                <input type="text" name="correo"  />
+                <img src="{{ url_for('static', filename='img/email.png') }}" class="userIcon"/>
+             </div>
+             <span class="error" id="errorMail"></span>
+         </p>
+		  
+		 <p>Contraseña:
+             <div class="input_Container">
+                 <input type="password" name="userPassword" />
+                 <img src="{{ url_for('static', filename='img/key.png') }}" class="userIcon"/>
+             </div>
+             <span class="error" id="errorPassword"></span>
+             <img src="{{ url_for('static', filename='img/ver.png') }}" width=100 height=50 onmouseover="verClave();" onmouseout="ocultarClave()"/>
+         </p>
+			
+		 <p>
+             <input type="checkbox" name="condiciones" /> Declaro haber leido y
+             acepto las condiciones generales del programa y la normativa sobre
+             protección de datos
+         </p>
+			
+		 <button type="submit" value="Enviar" id="botonEnviar">Enviar</button>
+
+      </form>
+
+    
+
+{% endblock %}
+
+<!-- FIN -->
