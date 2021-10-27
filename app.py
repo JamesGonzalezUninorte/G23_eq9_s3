@@ -3,7 +3,7 @@
    Equipo 9
 """
 import os
-from flask import Flask, blueprints
+from flask import Flask, blueprints, register
 
 def create_app():
     """fx Crear la aplicación principal
