@@ -1,4 +1,5 @@
 <!--Pagina 2: Login -->
+<<<<<<< HEAD
 {%extends 'pg00_base.html'%}
 {% block cuerpo %}
 <form name='flogin', id='flogin', action='/login/', method='POST'>
@@ -25,3 +26,36 @@
 </form>
 {% endblock %}
 <!-- FIN -->
+=======
+
+{% extends 'pg00_base.html' %}
+
+{% block cabeza %} Bachoco Plataforma de gestión de empleados{% endblock %}
+
+{% block cuerpo %}
+    <h1>Registro para empleados</h1>
+    <form name="formularioLogin" onsubmit="return validar();" method="POST">
+        <p>Usuario:
+            <a class="input_Container">
+                <input type="text" name="username" id="username" />
+                <img src="{{ url_for('static', filename='img/x_user.png') }}" class="userIcon" />
+            </a>
+            <span class="error" id="errorUsername"></span>
+        </p>
+
+        <p>Contraseña:
+            <a class="input_Container">
+                <input type="password" name="userPassword" />
+                <img src="{{ url_for('static', filename='img/x_key.png') }}" class="userIcon" />
+            </a>
+            <span class="error" id="errorPassword"></span>
+            <img src="{{ url_for('static', filename='img/x_ver.png') }}" width=100 height=50 onmouseover="verClave();"
+            onmouseout="ocultarClave()" />
+        </p>
+
+        <button type="submit" value="Login" id="botonEnviar">Enviar</button>
+    </form>
+{% endblock %}
+
+<!-- FIN -->
+>>>>>>> d0c3532fc8fa5cef78b29e3b2c78954435471dff

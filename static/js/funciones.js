@@ -66,10 +66,8 @@ function validar()
 }
 
 
-function verClave()
-{
+function verClave(){
     console.log('Mostrar clave');
-
     var passWordInput = document.getElementById('userPassword');
     passWordInput.type="text";
 }

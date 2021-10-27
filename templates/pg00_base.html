@@ -2,6 +2,7 @@
 
 <html lang='es'>
 
+<<<<<<< HEAD
    <head>
       <meta charset="utf-8"/>    
       <title> Gestion de empleados </title>
@@ -28,5 +29,18 @@
         {% block cuerpo %}{% endblock %}
     </div>
    </body>
+=======
+<head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo01.css') }}" />
+   <script src="{{ url_for('static', filename='js/funciones.js') }}"> </script>
+   <title> {% block cabeza %} {% endblock %} </title>
+
+</head>
+
+<body>
+   {% block cuerpo %} {% endblock %}
+</body>
+>>>>>>> d0c3532fc8fa5cef78b29e3b2c78954435471dff
 
 </html>
