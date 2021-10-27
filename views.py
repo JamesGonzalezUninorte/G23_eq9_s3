@@ -1,5 +1,5 @@
 from flask import Flask, render_template, blueprints, request, redirect, url_for, flash
-from formulario import pgLogin
+from formulario import FormInicio
 from markupsafe import escape
 import os
 #from werkzeug.security import generate_password_hash, check_password_hash
@@ -17,7 +17,7 @@ def index():
 @main.route('/login/', methods=['GET', 'POST'])
 def login():
     if request.method=='GET':
-        frm=pgLogin()
+        frm=FormInicio()
         return render_template('pg02_login.html', form=frm, titulo='Acceso de usuarios')
     else:
         #recuperar los datos del formulario
