@@ -1,0 +1,48 @@
+<!--Pagina 3: Empleado -->
+{%extends 'pg03_base.html'%}
+{% block cuerpo %}
+<form name='fempleado', id='fempleado', action='/empleado/', method='POST'>
+  <div class='container text-warning'>
+    <h1 class='display-4'>Bienvenido....</h1>
+    <h1 class='lead'>Acontinuacion podra visualizar sus datos personales y laborales</h1>
+    <div class="row">
+      <div class="col-4 border border-dark border-3">
+        <label class="form-label-lg">Nombre</label>
+        <input type="text" class="form-control form-control-sm" id="nombretxt">
+        <label class="form-label-lg">Genero</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Id</label>
+        <input type="text" class="form-control form-control-sm" id="nombretxt">
+        <label class="form-label-lg">Telefono</label>
+        <input type="text" class="form-control form-control-sm" id="nombretxt">
+        <label class="col-sm-2 col-form-label col-form-label-lg">&nbsp;</label>
+        <label class="col-sm-2 col-form-label col-form-label-lg">&nbsp;</label>
+        <label class="col-sm-2 col-form-label col-form-label-lg">&nbsp;</label>
+        <label class="col-sm-2 col-form-label col-form-label-lg">&nbsp;</label>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 border border-dark border-3">
+        <label class="form-label-lg">Fecha Ingreso</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Tipo contrato</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Fecha terminacion contrato</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Cargo</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Dependencia</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+        <label class="form-label-lg">Salario</label>
+        <input type="text" class="form-control form-control-sm" id="fechaingresotxt">
+      </div>
+      <div class="col-2 text-center">
+          <h4>Consulte su desempeño mesual dando click en el siguiente boton</h4>
+          <button type="button" class="btn btn-success"><a href='/retroalimentacion/'>Desempeño</a></button>
+      </div>
+    </div>
+    <h1 class="lead">Recuerde actualizar periodicamente su informacion personal</h1>
+    <h1 class="lead">Ingrese <a href='/politicadatos/'>aqui</a> para visualizar nuestra politica de privacidad y tratamiento de datos</h1>
+  </div>
+</form>
+{% endblock %}
+<!-- FIN -->

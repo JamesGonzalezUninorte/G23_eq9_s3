@@ -1,0 +1,23 @@
+<!--Pagina 1: Inicio -->
+
+{%extends 'pg00_base.html'%}
+
+{%block cabeza%} Bachoco {%endblock%}
+
+{%block cuerpo%}
+<form name='fhome', id='fhome', action='/home/', method='POST'>
+    <div class="container position-absolute top-50 start-50 translate-middle text-center text-primary" !important>
+        <div class="row">
+            <h1 class="col">Plataforma de gestion de empleados</h1>
+            <p>&nbsp;</p>
+            <h1 class="col">Empleados y administrativos de la empresa BACOCHO</h1>
+            <p>&nbsp;</p>
+            <h1 class="col">Ingrese sus credenciales en el siguiente enlace</h1>
+            <h1>&nbsp;</h1>
+        </div>
+        <a class="btn btn-success" href="/login/" role="button">Login</a>
+    </div>    
+</form>
+{%endblock%}
+
+<!-- FIN -->

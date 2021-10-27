@@ -1,4 +1,32 @@
 <!--Pagina 2: Login -->
+<<<<<<< HEAD
+{%extends 'pg00_base.html'%}
+{% block cuerpo %}
+<form name='flogin', id='flogin', action='/login/', method='POST'>
+  <div class='container rounded w-25 p-3 bg-success opacity-75 text-white position-absolute top-50 start-50 translate-middle' !important>
+    <div class="row">&nbsp;</div>
+    <div class='row'>
+        <div class='col'>{{ form.user.label}}</div>
+        <div class='col'>{{ form.user(size=38, minlength=10) }}</div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class='row'>
+        <div class='col'>{{ form.passw.label}}</div>
+        <div class='col'>{{ form.passw(size=38, minlength=8) }}</div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class='row'>
+        <p><a href='/olvidoPass/'>Olvido su contraseña?</a></p>
+    </div>
+    <div class='row'>
+        <div class='col-8'>&nbsp;</div>
+    </div>
+    <button type="sutmit" class="btn btn-sm btn-primary"><a href='/empleado/'>Ingresar</a></button>
+  </div>
+</form>
+{% endblock %}
+<!-- FIN -->
+=======
 
 {% extends 'pg00_base.html' %}
 
@@ -30,3 +58,4 @@
 {% endblock %}
 
 <!-- FIN -->
+>>>>>>> d0c3532fc8fa5cef78b29e3b2c78954435471dff
