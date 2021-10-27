@@ -1,0 +1,40 @@
+<!--Pagina 3: Empleado -->
+{%extends 'pg03_base.html'%}
+{% block cuerpo %}
+<form name='fdesempeno', id='fdesempeno', action='/desempeño/', method='POST'>
+  <div class='container text-warning'>
+    <h1>&nbsp;</h1>
+    <div class="row">
+      <div class="col-3">
+        <h1 class="lead">Ultimo periodo</h1>
+      </div>
+      <div class="col-6">
+        <input type="text" class="form-control-sm" id="nombretxt">
+      </div>
+    </div>
+    <h1>&nbsp;</h1>
+    <div class="row">
+      <div class="col">
+        <h1 class="lead">Durante este ultimo periodo su desempeño es:</h1>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control-sm" id="nombretxt">
+      </div>
+    </div>
+    <h1>&nbsp;</h1>
+    <div class="row">
+      <div class="col">
+        <h1 class="lead">De acuerdo a su puntaje, su desempeño es considerado:</h1>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control-sm" id="nombretxt">
+      </div>
+    </div>
+    <h1>&nbsp;</h1>
+    <div class="row border border-dark border-3 text-center">
+      <h1 class='lead'>mensaje con base a su desempeño</h1>
+    </div>
+  </div>
+</form>
+{% endblock %}
+<!-- FIN -->
